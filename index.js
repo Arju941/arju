@@ -100,20 +100,21 @@ const blogs=(some)=>{
     li.innerHTML=`
     <div class="card card-compact bg-base-100 w-96 shadow-xl">
   <figure>
-    <img
+    <img class=" h-40"
       src="${cover_image}"
       alt="" />
   </figure>
   <div class="card-body">
+  <p> ${ author.posted_date}<p/>
     <h2 class="text-lg font-semibold text-blackcode m-0.5">${title}</h2>
     <p>${description}</p>
     <div class="flex  justify-between">
        <div>
-          <img src="${profile_image}" alt="">
+          <img class=" h-16 w-16" src="${profile_image}" alt="">
        </div>
       <div>
-         <p>${author.name}<p>
-         <p>${description}
+         <p>${author.name}<p/>
+          <p>${author.designation}<p/>
           
       </div>
     </div>
